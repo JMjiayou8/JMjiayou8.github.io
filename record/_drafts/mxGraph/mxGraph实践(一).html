@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>mxGraph实践(一) | 前端</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="明媚jm静好">
+    
+    <link rel="preload" href="/assets/css/0.styles.97344b40.css" as="style"><link rel="preload" href="/assets/js/app.d2143999.js" as="script"><link rel="preload" href="/assets/js/2.47df87ce.js" as="script"><link rel="preload" href="/assets/js/37.88e71b48.js" as="script"><link rel="prefetch" href="/assets/js/10.10562931.js"><link rel="prefetch" href="/assets/js/11.312eab58.js"><link rel="prefetch" href="/assets/js/12.bf6e76d1.js"><link rel="prefetch" href="/assets/js/13.e6dd13ff.js"><link rel="prefetch" href="/assets/js/14.a54e3c56.js"><link rel="prefetch" href="/assets/js/15.93abd7e4.js"><link rel="prefetch" href="/assets/js/16.25d330c0.js"><link rel="prefetch" href="/assets/js/17.2d14ab0e.js"><link rel="prefetch" href="/assets/js/18.0b554629.js"><link rel="prefetch" href="/assets/js/19.817c40d0.js"><link rel="prefetch" href="/assets/js/20.94ff8d9d.js"><link rel="prefetch" href="/assets/js/21.79cf153d.js"><link rel="prefetch" href="/assets/js/22.dc3679f0.js"><link rel="prefetch" href="/assets/js/23.f5fcd5a0.js"><link rel="prefetch" href="/assets/js/24.46cb4b9d.js"><link rel="prefetch" href="/assets/js/25.e98c1be9.js"><link rel="prefetch" href="/assets/js/26.2095001c.js"><link rel="prefetch" href="/assets/js/27.58a1acb4.js"><link rel="prefetch" href="/assets/js/28.d680bff0.js"><link rel="prefetch" href="/assets/js/29.992d95a1.js"><link rel="prefetch" href="/assets/js/3.26dc1eb8.js"><link rel="prefetch" href="/assets/js/30.4cad3f4b.js"><link rel="prefetch" href="/assets/js/31.6e414039.js"><link rel="prefetch" href="/assets/js/32.5748e972.js"><link rel="prefetch" href="/assets/js/33.993b342e.js"><link rel="prefetch" href="/assets/js/34.5b6f90b9.js"><link rel="prefetch" href="/assets/js/35.38616c3e.js"><link rel="prefetch" href="/assets/js/36.5908270b.js"><link rel="prefetch" href="/assets/js/38.e6baadef.js"><link rel="prefetch" href="/assets/js/39.ae070c09.js"><link rel="prefetch" href="/assets/js/4.86ced183.js"><link rel="prefetch" href="/assets/js/40.f68b11e7.js"><link rel="prefetch" href="/assets/js/41.dc9d1b22.js"><link rel="prefetch" href="/assets/js/42.7e5afc86.js"><link rel="prefetch" href="/assets/js/43.a852ba40.js"><link rel="prefetch" href="/assets/js/44.d9651af8.js"><link rel="prefetch" href="/assets/js/45.c2a21aa3.js"><link rel="prefetch" href="/assets/js/46.f968033f.js"><link rel="prefetch" href="/assets/js/47.8a6d80dd.js"><link rel="prefetch" href="/assets/js/48.31914c0e.js"><link rel="prefetch" href="/assets/js/49.399da53c.js"><link rel="prefetch" href="/assets/js/5.94160314.js"><link rel="prefetch" href="/assets/js/50.a2c59f23.js"><link rel="prefetch" href="/assets/js/51.eb97c677.js"><link rel="prefetch" href="/assets/js/52.543dab67.js"><link rel="prefetch" href="/assets/js/53.68f288ce.js"><link rel="prefetch" href="/assets/js/54.2941f547.js"><link rel="prefetch" href="/assets/js/55.b65832cb.js"><link rel="prefetch" href="/assets/js/56.4cdf2ee7.js"><link rel="prefetch" href="/assets/js/57.47199658.js"><link rel="prefetch" href="/assets/js/58.63a99a95.js"><link rel="prefetch" href="/assets/js/59.0701ca50.js"><link rel="prefetch" href="/assets/js/6.9d07bfcc.js"><link rel="prefetch" href="/assets/js/60.d0091df9.js"><link rel="prefetch" href="/assets/js/61.c49de37c.js"><link rel="prefetch" href="/assets/js/62.85673044.js"><link rel="prefetch" href="/assets/js/63.cc0d13c1.js"><link rel="prefetch" href="/assets/js/64.75c281d3.js"><link rel="prefetch" href="/assets/js/65.635af4ab.js"><link rel="prefetch" href="/assets/js/66.aeae3443.js"><link rel="prefetch" href="/assets/js/67.6a124f09.js"><link rel="prefetch" href="/assets/js/68.4c3dd56f.js"><link rel="prefetch" href="/assets/js/69.44fe927e.js"><link rel="prefetch" href="/assets/js/7.34b07570.js"><link rel="prefetch" href="/assets/js/70.12b97bed.js"><link rel="prefetch" href="/assets/js/71.42226e60.js"><link rel="prefetch" href="/assets/js/72.b26360c6.js"><link rel="prefetch" href="/assets/js/73.36010723.js"><link rel="prefetch" href="/assets/js/74.29ff19f6.js"><link rel="prefetch" href="/assets/js/75.1ea97fc8.js"><link rel="prefetch" href="/assets/js/76.8742326e.js"><link rel="prefetch" href="/assets/js/77.b832925f.js"><link rel="prefetch" href="/assets/js/78.cf410b31.js"><link rel="prefetch" href="/assets/js/79.04ce8bff.js"><link rel="prefetch" href="/assets/js/8.6ddbbde1.js"><link rel="prefetch" href="/assets/js/80.6f437925.js"><link rel="prefetch" href="/assets/js/81.a1f5a279.js"><link rel="prefetch" href="/assets/js/82.7af2082e.js"><link rel="prefetch" href="/assets/js/83.defc08fa.js"><link rel="prefetch" href="/assets/js/84.1d8730ed.js"><link rel="prefetch" href="/assets/js/85.02f90619.js"><link rel="prefetch" href="/assets/js/86.a5c9df72.js"><link rel="prefetch" href="/assets/js/87.dad70317.js"><link rel="prefetch" href="/assets/js/88.c93f6868.js"><link rel="prefetch" href="/assets/js/89.b51f1654.js"><link rel="prefetch" href="/assets/js/9.f1c7b65d.js"><link rel="prefetch" href="/assets/js/90.08da5efe.js"><link rel="prefetch" href="/assets/js/91.5fabba29.js"><link rel="prefetch" href="/assets/js/92.b74e3ea7.js"><link rel="prefetch" href="/assets/js/93.8e5b345a.js"><link rel="prefetch" href="/assets/js/94.d5629756.js"><link rel="prefetch" href="/assets/js/95.d5f5be6d.js"><link rel="prefetch" href="/assets/js/96.03d86e57.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.97344b40.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">前端</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/note/" class="nav-link">
+  学习笔记
+</a></div><div class="nav-item"><a href="/record/" class="nav-link router-link-active">
+  工作笔记
+</a></div><div class="nav-item"><a href="/resource/" class="nav-link">
+  资源
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/note/" class="nav-link">
+  学习笔记
+</a></div><div class="nav-item"><a href="/record/" class="nav-link router-link-active">
+  工作笔记
+</a></div><div class="nav-item"><a href="/resource/" class="nav-link">
+  资源
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/record/asiainfo.html" class="sidebar-link">亚信科技有限公司</a></li><li><a href="/record/sefon.html" class="sidebar-link">成都四⽅伟业软件股份有限公司</a></li><li><a href="/record/yoho.html" class="sidebar-link">南京⽊拓信息技术有限公司</a></li><li><a href="/record/auais.html" class="sidebar-link">安澳智能系统南京有限公司</a></li></ul> </aside> <main class="page"> <div class="content__default"><p>工作需要使用 mxGraph 绘制流程图。旧系统使用 0.99.0.7 版本，最新版本 3.9.12。并且是融入 vue 项目。摸索中前行。首先，我下载了官方例子，每个例子都运行一遍，按照功能分类整理。其次，根据新系统设计图，统计功能点，再去研究旧系统，看使用方法。大概有个数。</p> <blockquote><p>参考地址</p></blockquote> <ul><li><a href="http://jgraph.github.io/mxgraph/docs/js-api/files/index-txt.html" target="_blank" rel="noopener noreferrer">API<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://jgraph.github.io/mxgraph/javascript/index.html" target="_blank" rel="noopener noreferrer">在线例子<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://github.com/jgraph/mxgraph" target="_blank" rel="noopener noreferrer">github 地址<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <blockquote><p>功能点、遇到的问题及解决方法</p></blockquote> <ol><li>因为是 vue 项目中使用，我网上搜索，没有得到什么有效信息。npm 引入的方式无效，只好按照静态文件的方式引入。</li></ol> <ul><li>下载<a href="https://github.com/jgraph/mxgraph/tree/master/javascript/src" target="_blank" rel="noopener noreferrer">源码<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>,放入项目 static 目录中。</li> <li>index.html 中引入,文件路径与 webpack 配置 assetsSubDirectory、assetsPublicPath 有关。</li></ul> <div class="language- extra-class"><pre class="language-text"><code>//config/index.js
+...
+dev: {
+    assetsSubDirectory: 'assets',
+    assetsPublicPath: '/bpm_web_app',
+    ...
+}
+...
+build: {
+    ...
+    assetsSubDirectory: 'assets',
+    assetsPublicPath: '/bpm_web_app/',
+    ...
+}
+...
+
+
+//index.html
+...
+&lt;body&gt;
+    &lt;div id=&quot;app&quot;&gt;&lt;/div&gt;
+    &lt;script&gt;
+      mxBasePath = '/bpm_web_app/assets/src';
+    &lt;/script&gt;
+    &lt;script src=&quot;/bpm_web_app/assets/src/js/mxClient.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+...
+</code></pre></div><ol start="2"><li>新建 vue 文件，初始化模板如下</li></ol> <div class="language- extra-class"><pre class="language-text"><code>&lt;template&gt;
+    &lt;div id=&quot;graph&quot;&gt;&lt;/div&gt;
+&lt;/template&gt;
+&lt;script&gt;
+export default {
+    data() {
+        return{
+            graph:null
+        }
+    },
+    mounted() {
+        this.main(document.getElementById(&quot;graph&quot;));
+    },
+    methods:{
+        main(container){
+            let self = this;
+            if (!mxClient.isBrowserSupported()) {
+                mxUtils.error(&quot;Browser is not supported!&quot;, 200, false);
+            } else {
+                self.graph = new mxGraph(container)
+                // 启动更新事务
+                self.graph.getModel().beginUpdate();
+                try {
+                    //具体绘制代码
+                } finally {
+                    self.graph.getModel().endUpdate();
+                }
+            }
+        }
+
+    }
+}
+&lt;/script&gt;
+</code></pre></div><ol start="3"><li>修改默认样式</li></ol> <ul><li>关键属性<a href="https://jgraph.github.io/mxgraph/docs/js-api/files/util/mxConstants-js.html#mxConstants" target="_blank" rel="noopener noreferrer">mxConstants<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <div class="language- extra-class"><pre class="language-text"><code>setDefaultStyle() {
+    let self = this;
+    //节点样式
+    let vertexStyle=self.graph.getStylesheet().getDefaultVertexStyle();
+    vertexStyle[mxConstants.STYLE_SHAPE]=mxConstants.SHAPE_IMAGE;
+    vertexStyle[mxConstants.STYLE_VERTICAL_LABEL_POSITION] = mxConstants.ALIGN_MIDDLE;
+    vertexStyle[mxConstants.STYLE_VERTICAL_ALIGN] = mxConstants.ALIGN_MIDDLE;
+    vertexStyle[mxConstants.STYLE_FONTCOLOR] = &quot;#000&quot;;
+    //连接线样式
+    let edgeStyle=self.graph.getStylesheet().getDefaultEdgeStyle();
+    edgeStyle[mxConstants.STYLE_STARTARROW]=mxConstants.ARROW_OVAL;
+    edgeStyle[mxConstants.STYLE_STROKECOLOR] =&quot;#666&quot;;
+    edgeStyle[mxConstants.STYLE_DASHED] = true; //设置虚线
+},
+</code></pre></div><ol start="4"><li>mxEditor 配置节点属性</li></ol> <ul><li>使用</li></ul> <div class="language- extra-class"><pre class="language-text"><code>//1⃣️官网使用如下方法获取mxEditor配置信息，但实践无效，未深究。
+️let root = mxUtils.load('config/graphConfig.xml').getDocumentElement();
+
+
+//2⃣我将配置信息存储到js中,然后通过以下方式获取并配置。
+import { graphConfig } from &quot;@/assets/utils/graphConfig&quot;;
+
+
+let root = mxUtils.parseXml(graphConfig).documentElement;
+
+
+self.editor = new mxEditor(root);
+self.graph = new mxGraph(container,self.editor.graph.model);
+</code></pre></div><ul><li>mxEditor 配置如下，templates 中配置节点和连线的基础结构，可包含属性和样式。在拖拽方法中通过 self.editor.templates[&quot;xxx&quot;]获取。</li></ul> <div class="language- extra-class"><pre class="language-text"><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;mxEditor defaultGroup=&quot;group&quot; defaultEdge=&quot;connector&quot;&gt;
+	&lt;Array as=&quot;templates&quot;&gt;
+	    &lt;!--连线设置--&gt;
+		&lt;add as=&quot;connector&quot;&gt;
+			&lt;Connector  href=&quot;&quot; cellType='connector' lineName=''  lineLeftValue='' lineOperator='' lineRightValue=''&gt;
+				&lt;mxCell style=&quot;straight;strokeWidth=0.5&quot; &gt;
+					&lt;mxGeometry as=&quot;geometry&quot; relative=&quot;1&quot; /&gt;
+				&lt;/mxCell&gt;
+			&lt;/Connector&gt;
+		&lt;/add&gt;
+		&lt;!--节点设置--&gt;
+		&lt;add as=&quot;start&quot;&gt;
+			&lt;Roundrect  href=&quot;&quot; cellType='start' activityId='start' activityName='开始'&gt;
+				&lt;mxCell vertex=&quot;1&quot; style=&quot;rounded&quot;&gt;
+
+					&lt;mxGeometry as=&quot;geometry&quot; width=&quot;32&quot; height=&quot;32&quot;/&gt;
+				&lt;/mxCell&gt;
+			&lt;/Roundrect&gt;
+		&lt;/add&gt;
+		...
+	&lt;/Array&gt;
+	&lt;mxGraph as=&quot;graph&quot; alternateEdgeStyle=&quot;verticalConnector&quot; allowLoops=&quot;1&quot; dropEnabled=&quot;1&quot;&gt;
+		&lt;mxGraphModel as=&quot;model&quot;&gt;
+			&lt;root&gt;
+				&lt;Diagram processName=&quot;My Process&quot;&gt;
+					&lt;mxCell/&gt;
+				&lt;/Diagram&gt;
+				&lt;Layer processId=&quot;Default Layer&quot; id=&quot;1&quot;&gt;
+					&lt;mxCell parent=&quot;0&quot;/&gt;
+				&lt;/Layer&gt;
+			&lt;/root&gt;
+		&lt;/mxGraphModel&gt;
+	&lt;/mxGraph&gt;
+&lt;/mxEditor&gt;
+</code></pre></div><ol start="5"><li>我遇到的第一问题便是拖拽自定义图标。</li></ol> <ul><li><a href="https://jgraph.github.io/mxgraph/docs/js-api/files/util/mxUtils-js.html#mxUtils.makeDraggable" target="_blank" rel="noopener noreferrer">核心方法 makeDraggable<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>function( element,graphF,funct,dragElement,dx,dy,autoscroll,scalePreview,highlightDropTargets,getDropTarget)</li> <li>mxGraph 中节点设置属性，该节点只可以是 xml 格式，所以初始版本我创建 xml 节点并设置属性</li></ul> <div class="language- extra-class"><pre class="language-text"><code>let dragFunct = function(graph, evt, target, x, y) {
+    var doc = mxUtils.createXmlDocument();
+
+    var cell = doc.createElement(type);
+    cell.setAttribute(&quot;name&quot;, title);
+    cell.setAttribute(&quot;type&quot;, type);
+    cell.setAttribute(&quot;dragId&quot;, dragId);
+    self.graph.insertVertex(
+        self.processData ? graph.getDefaultParent() : self.parent,
+        null,
+        cell,
+        x,
+        y,
+        40,
+        40,
+        &quot;image=&quot; + require(&quot;@/assets/images/&quot; + dragId + &quot;.png&quot;) + &quot;;&quot;
+    );
+};
+</code></pre></div><ul><li>但是创建 xml 节点的方式貌似并不适用于创建连接线，因为连接线需要设置起止点坐标。多方研究后，采取 mxEditor 配置的方式，同时修改节点拖拽</li></ul> <div class="language- extra-class"><pre class="language-text"><code>let dragFunct = function(graph, evt, target, x, y) {
+    if (type == &quot;line&quot;) {
+      var cell = self.editor.templates[&quot;connector&quot;];
+      //设置连线起止点相对坐标
+      cell.geometry.setTerminalPoint(new mxPoint(0, 50), true);
+      cell.geometry.setTerminalPoint(new mxPoint(50, 0), false);
+      cell.edge = true;
+    } else {
+      var cell = self.editor.templates[type];
+      cell.setStyle(
+        &quot;image=&quot; +
+          require(&quot;@/assets/images/&quot; + imgMap[`${type}`] + &quot;-finish.png&quot;) +
+          &quot;;&quot;
+      );
+      cell.vertex = true;
+    }
+    let cells = graph.importCells([cell], x, y, target);
+    if (cells != null &amp;&amp; cells.length &gt; 0) {
+      self.graph.scrollCellToVisible(cells[0]);
+      self.graph.setSelectionCells(cells);
+    }
+};
+</code></pre></div><ul><li>完整代码如下</li></ul> <div class="language- extra-class"><pre class="language-text"><code>//设置图标拖拽
+setDragItem(title, type) {
+      let self = this;
+      //拖拽图标源
+      let img = document.getElementById('icon');
+      if (mxClient.IS_IE) {
+        mxEvent.addListener(img, &quot;dragstart&quot;, function(evt) {
+          evt.returnValue = false;
+        });
+      }
+      let graphF = function(evt) {
+        let x = mxEvent.getClientX(evt);
+        let y = mxEvent.getClientY(evt);
+        let elt = document.elementFromPoint(x, y);
+        if (mxUtils.isAncestorNode(self.graph.container, elt)) {
+          return self.graph;
+        }
+        return null;
+      };
+      let dragFunct = function(graph, evt, target, x, y) {
+        if (type == &quot;line&quot;) {
+          var cell = self.editor.templates[&quot;connector&quot;];
+          //设置连线起止点相对坐标
+          cell.geometry.setTerminalPoint(new mxPoint(0, 50), true);
+          cell.geometry.setTerminalPoint(new mxPoint(50, 0), false);
+          cell.edge = true;
+        } else {
+          var cell = self.editor.templates[type];
+          cell.setStyle(
+            &quot;image=&quot; +
+              require(&quot;@/assets/images/&quot; + imgMap[`${type}`] + &quot;-finish.png&quot;) +
+              &quot;;&quot;
+          );
+          cell.vertex = true;
+        }
+        let cells = graph.importCells([cell], x, y, target);
+        if (cells != null &amp;&amp; cells.length &gt; 0) {
+          self.graph.scrollCellToVisible(cells[0]);
+          self.graph.setSelectionCells(cells);
+        }
+      };
+      //拖拽时的图形
+      let dragElt = document.getElementById(icon);
+      mxUtils.makeDraggable(
+        img,
+        self.graph,
+        dragFunct,
+        dragElt,
+        0,
+        0,
+        self.graph.autoscroll,
+        true
+      );
+    },
+</code></pre></div><blockquote><p>总结</p></blockquote> <ul><li>mxGraph 是第一次使用，虽然是很成熟的一个工具库，但网上资源不是很多，API 文档又是纯英文。很多时候很小的一个功能点需要纠结好久，连搜索都无从下手，只能一遍一遍的看官方 API 文档。</li> <li>绝大多部分，是为了完成需求实现功能，也无法将代码研究透，停留在会用的基础上。</li> <li>尽可能直接分享可用的代码段，理论知识我自个儿也还一知半解。</li></ul> <blockquote><p>前言</p></blockquote> <ul><li>mxGraph 小结(一)中介绍了 vue 项目中使用 mxGraph 的流程及拖拽功能的实现。细节功能点因篇幅较长，所以本篇重点罗列。</li></ul> <ul><li>获取图表对应 xml</li></ul> <div class="language- extra-class"><pre class="language-text"><code>getXmlCode() {
+  let self = this;
+  let enc = new mxCodec(mxUtils.createXmlDocument());
+  let node = enc.encode(self.graph.getModel());
+  self.xmlCode = mxUtils.getPrettyXml(node);
+},
+</code></pre></div><ul><li>根据 xml 数据渲染图表</li></ul> <div class="language- extra-class"><pre class="language-text"><code>let node = mxUtils.parseXml(self.graphData);
+let root = node.documentElement;
+let decoder = new mxCodec(node);
+decoder.decode(root, self.graph.getModel());
+</code></pre></div><ul><li>关于编辑状态</li></ul> <div class="language- extra-class"><pre class="language-text"><code>//可连接
+self.graph.setConnectable(true);
+// 设置节点不可改变大小
+self.graph.setCellsResizable(false);
+//设置节点不可编辑
+self.graph.setCellsEditable(false);
+</code></pre></div><ul><li>连接自己</li></ul> <div class="language- extra-class"><pre class="language-text"><code>self.graph.connectionHandler.setCreateTarget(true);
+</code></pre></div><ul><li>小图预览</li></ul> <div class="language- extra-class"><pre class="language-text"><code>new mxOutline(self.graph,document.getElementById(&quot;mxOutline&quot;)
+</code></pre></div><ul><li>mxUndoManager:撤销操作</li></ul> <div class="language- extra-class"><pre class="language-text"><code>var history = new mxUndoManager();
+var listener = function(sender, evt)
+{
+	history.undoableEditHappened(evt.getProperty('edit'));
+};
+graph.getModel().addListener(mxEvent.UNDO, listener);
+graph.getView().addListener(mxEvent.UNDO, listener);
+</code></pre></div><ul><li>设置快捷键</li></ul> <div class="language- extra-class"><pre class="language-text"><code>let keyHandler = new mxKeyHandler(graph);
+keyHandler.bindKey(38, function() {//设置向上按钮放大图表
+   graph.zoomIn();
+});
+</code></pre></div><ul><li>设置悬浮时连接箭头图标</li></ul> <div class="language- extra-class"><pre class="language-text"><code>mxConnectionHandler.prototype.connectImage = new mxImage(require(&quot;@/assets/images/connector.gif&quot;),20,20);
+</code></pre></div><ul><li>悬浮高亮外框</li></ul> <div class="language- extra-class"><pre class="language-text"><code>new mxCellTracker(self.graph, &quot;#00FF00&quot;);
+</code></pre></div><p>​</p></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.d2143999.js" defer></script><script src="/assets/js/2.47df87ce.js" defer></script><script src="/assets/js/37.88e71b48.js" defer></script>
+  </body>
+</html>

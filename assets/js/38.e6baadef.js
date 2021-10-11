@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[38],{421:function(t,e,s){"use strict";s.r(e);var n=s(44),l=Object(n.a)({},(function(){var t=this.$createElement,e=this._self._c||t;return e("ContentSlotsDistributor",{attrs:{"slot-key":this.$parent.slotKey}},[e("p",[this._v("es6 用了也挺长时间的，之前去面试的时候被问到对 es6 的理解和使用程度。唔。")])])}),[],!1,null,null,null);e.default=l.exports}}]);
